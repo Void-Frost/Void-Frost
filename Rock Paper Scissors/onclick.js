@@ -1,3 +1,3 @@
 function getInput(){
-return document.GetElementbyId("input").value
+return document.getElementById("input").value
 }
