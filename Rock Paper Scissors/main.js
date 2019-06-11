@@ -10,7 +10,7 @@ console.log("Player choice: "+userInput+" Computer Choice: "+computerChoice)
   wins=wins+1
  document.getElementById("wins").innerHTML="Wins: "+wins
  }
-  if (winner.toLowerCase()=="user lost"){
+ else if (winner.toLowerCase()=="user lost"){
   losses=losses+1
  document.getElementById("losses").innerHTML="Losses: "+losses
  }
