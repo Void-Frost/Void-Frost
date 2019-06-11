@@ -1,1 +1,3 @@
-var inputchoice = document.GetElementById("input").innerHTML
+function getinput(){
+return document.GetElementById("input").innerHTML
+}
