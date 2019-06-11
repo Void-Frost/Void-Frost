@@ -4,7 +4,6 @@ var computerChoice=getComputerChoice()
 console.log("Player choice: "+userInput+" Computer Choice: "+computerChoice)
  console.log(determinewinner(userInput,computerChoice))
 }
-playGame("")
 
 function getComputerChoice(){
   var num = Math.floor(Math.random()*3)
