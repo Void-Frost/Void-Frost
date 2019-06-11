@@ -1,8 +1,19 @@
 // JavaScript source code
+var wins = 0
+var losses = 0
 function playGame(userInput){
 var computerChoice=getComputerChoice()
 console.log("Player choice: "+userInput+" Computer Choice: "+computerChoice)
  console.log(determinewinner(userInput,computerChoice))
+ var winner = determinewinner(userInput,computerChoice)
+ if (winner.toLowerCase()=="user won"){
+  wins=wins+1
+ document.getElementById("wins").innerHTML="Wins: "+wins
+ }
+  if (winner.toLowerCase()=="user lost"){
+  losses=losses+1
+ document.getElementById("losses").innerHTML="Losses: "+losses
+ }
 }
 
 function getComputerChoice(){
