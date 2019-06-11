@@ -6,6 +6,7 @@ var computerChoice=getComputerChoice()
 console.log("Player choice: "+userInput+" Computer Choice: "+computerChoice)
  console.log(determinewinner(userInput,computerChoice))
  var winner = determinewinner(userInput,computerChoice)
+ document.getElementById("pcchoice").innerHTML="Computer choice: "+computerChoice
  if (winner.toLowerCase()=="user won"){
   wins=wins+1
  document.getElementById("wins").innerHTML="Wins: "+wins
