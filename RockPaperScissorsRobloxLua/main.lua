@@ -1,6 +1,7 @@
 	local pcchoice = nil
 	wins = 0
 	losses = 0
+	ties = 0
 	function playgame(userinput)
 		local pcinput = getpcchoice()
    		local winner = determinewinner(userinput,pcinput)	
@@ -13,7 +14,8 @@
 			script.Parent.Parent.Losses.Text="Losses: "..losses
 			
 		elseif string.lower(winner)=="tie" then
-			print("Tie")
+			ties=ties+1
+			script.Parent.Parent.Ties.Text="Ties: "..ties
 		end
 		script.Parent.Parent.Winner.Text=winner
 end
