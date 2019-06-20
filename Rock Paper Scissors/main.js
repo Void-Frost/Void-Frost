@@ -1,6 +1,7 @@
 // JavaScript source code
 var wins = 0
 var losses = 0
+var ties = 0
 function playGame(userInput){
 var computerChoice=getComputerChoice()
 console.log("Player choice: "+userInput+" Computer Choice: "+computerChoice)
@@ -15,6 +16,11 @@ console.log("Player choice: "+userInput+" Computer Choice: "+computerChoice)
  else if (winner.toLowerCase()=="user lost"){
   losses=losses+1
  document.getElementById("losses").innerHTML="Losses: "+losses
+ }
+ 
+  else if (winner.toLowerCase()=="tie"){
+ ties=ties+1
+ document.getElementById("ties").innerHTML="Ties: "+ties
  }
 }
 
@@ -32,7 +38,7 @@ function getComputerChoice(){
 }
 function determinewinner(userChoice,computerChoice) {
   if (userChoice.toLowerCase()==computerChoice.toLowerCase()){
-    return "Tie!"
+    return "Tie"
   }
 else if (userChoice.toLowerCase()=="bomb"){
   return "User won"
