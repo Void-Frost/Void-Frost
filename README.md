@@ -1,5 +1,5 @@
 # The website
-https://moistware.github.io/moistware/
+(Currently not being hosted on GitHub pages, but the source is here anyway.)
 
 # moistware's github
 Hi! I put code projects here sometimes
