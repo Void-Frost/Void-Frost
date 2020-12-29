@@ -1,7 +1,7 @@
 # The website
 (Currently not being hosted on GitHub pages, but the source is here anyway.)
 
-# moistware's github
+# Void Frost's github
 Hi! I put code projects here sometimes
 
 # Rock Paper Scissors
